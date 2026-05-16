@@ -276,28 +276,6 @@
             isHidden = !isHidden;
         });
     }
-    function showWelcomePopup() {
-        Swal.fire({
-            title: 'Welcome to Glamour Elite!',
-            text: 'Stay updated with the latest trends and earnings. Join our official Telegram channel now.',
-            icon: 'info',
-            iconColor: '#dbb445',
-            background: '#0a0a0a',
-            showCancelButton: true,
-            confirmButtonText: '<i class="fa fa-paper-plane"></i> JOIN NOW',
-            cancelButtonText: 'CLOSE',
-            customClass: {
-                popup: 'glam-popup',
-                title: 'glam-title',
-                htmlContainer: 'glam-content',
-                confirmButton: 'glam-btn-confirm'
-            }
-        }).then((result) => {
-            if (result.isConfirmed) {
-                window.open('https://t.me/glamourdigitals', '_blank');
-            }
-        });
-    }
     function initAlerts() {
         document.querySelectorAll('.link-alert').forEach(item => {
             item.addEventListener('click', (e) => {
@@ -326,7 +304,6 @@
         updateDashboard();
         initEarningsCard();
         initAlerts();
-        setTimeout(showWelcomePopup, 1500);
     };
 </script>
 </body>

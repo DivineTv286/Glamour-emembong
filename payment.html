@@ -168,7 +168,7 @@
 
     <div class="price-tag">
         <div class="price-label">Exact Amount to Pay</div>
-        <div class="price-amt" id="final-amt">₦14,000</div>
+        <div class="price-amt" id="final-amt">₦14,500</div>
     </div>
 
     <div class="bank-card">
@@ -176,13 +176,13 @@
         
         <div class="detail-row">
             <span class="label">Bank Name</span>
-            <span class="val" id="bank-name">KUDA MFB</span>
+            <span class="val" id="bank-name">POCKET APP</span>
         </div>
 
         <div class="detail-row">
             <span class="label">Account Number</span>
             <span class="val">
-                <span id="acc-no">3002736128</span> 
+                <span id="acc-no">7560096667</span> 
                 <i class="fa-regular fa-copy copy-icon" onclick="copy('acc-no')"></i>
             </span>
         </div>
@@ -190,7 +190,7 @@
         <div class="detail-row">
             <span class="label">Account Name</span>
             <span class="val">
-                <span id="acc-name">OZOH CHIDERA</span> 
+                <span id="acc-name">EMAEDIONG NKANANG</span> 
                 <i class="fa-regular fa-copy copy-icon" onclick="copy('acc-name')"></i>
             </span>
         </div>
@@ -224,10 +224,10 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('narrator').innerText = user.toUpperCase().replace('@','') + "_GLAM";
 
     // Hardcoded exclusively to Nigerian Bank Data
-    document.getElementById('final-amt').innerText = '₦14,000';
-    document.getElementById('bank-name').innerText = 'KUDA MFB';
+    document.getElementById('final-amt').innerText = '₦14,500';
+    document.getElementById('bank-name').innerText = 'POCKETAPP';
     document.getElementById('acc-no').innerText = '7560096667';
-    document.getElementById('acc-name').innerText = 'EMAEDIONG NKANANG ';
+    document.getElementById('acc-name').innerText = 'EMAEDIONG NKANANG';
     
     startTimer(600, document.getElementById('timer'));
 });
